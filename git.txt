@@ -14,3 +14,14 @@
 
 4. 작업이 일단락되면 commit한다
   - git commit -m "작업내용" : 반드시 메시지를 남긴다
+
+5. 브랜치 이름을 main으로 변경
+  git의 기본 브랜치는 master, github는 main을 사용
+  git branch -M main
+
+6. github 원격저장소(기본이름:origin)를 등록
+  git remote add origin https://github.com/wvriinylxont/project1.git
+
+7. 원격저장소에 push한다
+  -u는 원격저장소 이름을 저장. 다음부터는 git push
+  git push -u origin main
