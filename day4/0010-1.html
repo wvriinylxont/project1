@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    입력을 받는 input요소를 감싸는 컨테이너
+    필수속성 : action(서버주소)
+    필수속성 : method("get"/post)
+    필수속성 : enctype("urlencoded"/form-data)
+    -->
+    <!-- 
+    프론트엔드는 html, js
+    백엔드는 정말 많다
+    프론트와 백은 서로 다른 언어를 사용한다
+    - 데이터를 누구나 이해할 수 있는 형식으로 변환해서 주고 받는다(encoding)
+    - 웹에서 사용하는 데이터 인코딩 표준 : urlencoded
+    - ?username=spring&password=1234
+    -->
+    <!-- 
+    get 방식은 urlencoded된 데이터가 주소창에 나타난다 (서버 변화 x)
+    post 방식은 urlencoded된 데이터가 주소창에 나타나지 않는다 (서버정보변경)
+    -->
+    <form action="#" method="get">
+        <input type="text" name="username" value="spring">
+        <button>보내기</button>
+
+    </form>
+    <form action="#" method="post">
+        <input type="text" name="username" value="spring">
+        <button>보내기</button>
+
+    </form>
+</body>
+
+</html>
